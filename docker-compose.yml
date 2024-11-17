@@ -1,13 +1,15 @@
 services:
   backend:
-    image: juanpb0727/bills_manager-backend:latest
+    build:
+      context: ocr-app/backend
     container_name: backend
     ports:
       - "8000:8000"
     restart: always
 
   frontend:
-    image: juanpb0727/bills_manager-frontend:latest
+    build:
+      context: ocr-app/frontend
     container_name: frontend
     ports:
       - "2480:2480"
