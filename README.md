@@ -2,7 +2,9 @@
 
 A web-based application that allows users to upload bill images, extract textual data using OCR (Optical Character Recognition), and download the extracted data in JSON format. The backend is powered by ⚡ FastAPI with Tesseract OCR, while the frontend is built with pure HTML, CSS, and JavaScript.
 
-![Application Screenshot](./ocr-app/frontend/assets/UI.png)
+<div align="center">
+  <img src="./ocr-app/frontend/assets/UI.png" alt="Application Screenshot" />
+</div>
 
 ---
 
