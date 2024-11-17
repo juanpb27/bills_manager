@@ -1,16 +1,12 @@
 services:
   backend:
-    build:
     image: juanpb0727/bills_manager-backend:latest
     container_name: backend
     ports:
       - "8000:8000"
-    volumes:
-      - ${UPLOADS_PATH:-C:/uploads}:/app/uploads
     restart: always
 
   frontend:
-    build:
     image: juanpb0727/bills_manager-frontend:latest
     container_name: frontend
     ports:

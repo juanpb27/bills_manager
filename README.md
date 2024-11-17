@@ -66,7 +66,6 @@ bills_manager/
 │   │   ├── Dockerfile
 │   │   ├── main.py
 │   │   ├── requirements.txt
-│   │   ├── uploads/
 │   ├── frontend/
 │       ├── assets/
 │       │   └── UI.png
@@ -74,7 +73,6 @@ bills_manager/
 │       ├── index.html
 │       ├── script.js
 │       ├── styles.css
-├── uploads/
 ├── docker-compose.yml
 ├── README.md
 ```
