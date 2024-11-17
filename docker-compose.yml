@@ -1,0 +1,18 @@
+services:
+  backend:
+    build:
+      context: ocr-app/backend
+    container_name: backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ${UPLOADS_PATH:-C:/uploads}:/app/uploads
+    restart: always
+
+  frontend:
+    build:
+      context: ocr-app/frontend
+    container_name: frontend
+    ports:
+      - "2480:2480"
+    restart: always

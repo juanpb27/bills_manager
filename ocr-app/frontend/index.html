@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Bill Manager</h1>
+            <p class="subtitle">Upload your bill images and get the content</p>
+            
+            <div id="drop-area">
+                <p class="upload-text">Drag and drop <br> or</p>
+                <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                <label class="select-button" for="fileElem">Select files</label>
+            </div>
+
+            <div id="gallery" class="image-gallery"></div>
+            <button id="extractButton" class="action-button" disabled>Extract Entities</button>
+            <div id="results" class="results" style="display: none;">
+                <h2>Extracted Entities</h2>
+                <div id="markdownResults"></div>
+                <button id="downloadButton" class="action-button download-button">Download JSON</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
